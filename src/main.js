@@ -7,7 +7,7 @@ import ElementUI from 'element-ui' // ElementUI
 import 'element-ui/lib/theme-chalk/index.css' // 默认主题
 // --------------------------------------------------
 // 国际化语言包
-import locale from 'element-ui/lib/locale/lang/en' // lang i18n
+// import locale from 'element-ui/lib/locale/lang/en' // lang i18n
 // --------------------------------------------------
 // 全局公共样式
 import '@/styles/index.scss' // global css
@@ -41,12 +41,19 @@ import '@/permission' // permission control//权限控制
 // --------------------------------------------------
 
 // set ElementUI lang to EN
-Vue.use(ElementUI, { locale })
+// Vue.use(ElementUI, { locale })
 // 如果想要中文版 element-ui，按如下方式声明
-// Vue.use(ElementUI)
+Vue.use(ElementUI)
 
 // 控制台有个生成的错误，暂时屏蔽
 Vue.config.productionTip = false
+// --------------------------------------------------
+import * as obj from '@/directives' // 全局指令
+// 全局自定义指令
+Object.keys(obj).forEach(key => {
+  Vue.directive(key, obj[key])
+})//
+// --------------------------------------------------
 
 new Vue({
   el: '#app', // 定义渲染的元素

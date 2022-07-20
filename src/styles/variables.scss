@@ -1,29 +1,39 @@
+// 1 全局变量
 // base color
 $blue: #409EFF;
 
-$light-blue:#3A71A8;
-$red:#C03639;
+$light-blue: #3A71A8;
+$red: #C03639;
 $pink: #E65D6E;
 $green: #30B08F;
-$orange:#fa7c4d;
+$orange: #fa7c4d;
 $tiffany: #4AB7BD;
-$yellow:#FEC171;
+$yellow: #FEC171;
 $panGreen: #30B08F;
 $green1: #44b549;
 
 // sidebar
-$menuText:#ffffff;
-$menuActiveText:#409EFF;
-$subMenuActiveText:#f4f4f5; // https://github.com/ElemeFE/element/issues/12951
+// ------ 一级按钮的文字颜色 ------
+$menuText: #ffffff;
+// ------ 侧边栏一级按钮 正在打开的颜色 ------
+$menuActiveText: #409EFF;
 
+// ------ 侧边栏二级按钮 正在打开的颜色 ------
+$subMenuActiveText: #f4f4f5; // https://github.com/ElemeFE/element/issues/12951
+
+// ------ 一级按钮的颜色 ------
 $menuBg: transparent;
-$menuHover:#ffffff;
+// ------ 鼠标悬浮在侧边栏一级按钮时 按钮的颜色 ------
+$menuHover: #ffffff;
 
 
 
-$subMenuBg:#1f2d3d;
-$subMenuHover:#001528;
+// ------ 二级按钮的颜色 ------
+$subMenuBg: #1f2d3d;
+// ------ 鼠标悬浮在侧边栏二级按钮时 按钮的颜色 ------
+$subMenuHover: #001528;
 
+// ------ 侧边栏的宽度------
 $sideBarWidth: 210px;
 
 // the :export directive is the magic sauce for webpack

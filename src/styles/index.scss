@@ -1,9 +1,10 @@
+// 1 全局通用样式 (全局通用样式)
 @import './variables.scss';
 @import './mixin.scss';
-@import './transition.scss';
-@import './element-ui.scss';
-@import './sidebar.scss';
-@import './common.scss';
+@import './transition.scss'; //过度动画
+@import './element-ui.scss'; //element-ui样式
+@import './sidebar.scss'; //左侧导航样式
+@import './common.scss'; //全局通用样式
 
 body {
   height: 100%;

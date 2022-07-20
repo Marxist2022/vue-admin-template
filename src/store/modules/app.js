@@ -1,7 +1,9 @@
+//1 不用修改
 import Cookies from 'js-cookie'
 
 const state = {
   sidebar: {
+    //------ 页面上侧边栏打开和关闭 ------
     opened: Cookies.get('sidebarStatus') ? !!+Cookies.get('sidebarStatus') : true,
     withoutAnimation: false
   },
@@ -29,13 +31,13 @@ const mutations = {
 }
 
 const actions = {
-  toggleSideBar({ commit }) {
+  toggleSideBar ({ commit }) {
     commit('TOGGLE_SIDEBAR')
   },
-  closeSideBar({ commit }, { withoutAnimation }) {
+  closeSideBar ({ commit }, { withoutAnimation }) {
     commit('CLOSE_SIDEBAR', withoutAnimation)
   },
-  toggleDevice({ commit }, device) {
+  toggleDevice ({ commit }, device) {
     commit('TOGGLE_DEVICE', device)
   }
 }

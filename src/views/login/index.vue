@@ -127,7 +127,6 @@ export default {
             this.loading = false
           })
         } else {
-          console.log('error submit!!')
           this.$message.error('表单数据有误，请检查后重新提交')
           return false
         }

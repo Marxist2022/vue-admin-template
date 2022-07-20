@@ -1,11 +1,12 @@
+// 1 不要修改
 import defaultSettings from '@/settings'
 
 const { showSettings, fixedHeader, sidebarLogo } = defaultSettings
 
 const state = {
-  showSettings: showSettings,
-  fixedHeader: fixedHeader,
-  sidebarLogo: sidebarLogo
+  showSettings: showSettings, // 是否显示设置面板
+  fixedHeader: fixedHeader, // 固定头部
+  sidebarLogo: sidebarLogo// 侧边栏logo
 }
 
 const mutations = {
@@ -18,7 +19,7 @@ const mutations = {
 }
 
 const actions = {
-  changeSetting({ commit }, data) {
+  changeSetting ({ commit }, data) {
     commit('CHANGE_SETTING', data)
   }
 }

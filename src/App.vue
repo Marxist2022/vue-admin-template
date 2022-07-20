@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <!-- 一级组件占位符 -->
+    <!-- //----- 一级组件占位符 ------ -->
     <router-view />
   </div>
 </template>
